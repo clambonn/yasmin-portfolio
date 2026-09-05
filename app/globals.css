@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  /* Client palette */
+  --cream: #f4eae1;
+  --cream-paper: #fffdfb;
+  --navy: #1a365d;
+  --navy-deep: #112542;
+  --navy-ink: #0d1c33;
+  --orange: #e65f2b;
+  --orange-soft: #f0996b;
+  --orange-mist: #f6d9c9;
+
+  --background: var(--cream);
+  --foreground: var(--navy-ink);
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-cream-paper: var(--cream-paper);
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-navy-ink: var(--navy-ink);
+  --color-orange: var(--orange);
+  --color-orange-soft: var(--orange-soft);
+  --color-orange-mist: var(--orange-mist);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-display: "Space Grotesk";
+  --font-body: "Inter";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--orange);
+  color: var(--cream-paper);
+}
+
+.focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
