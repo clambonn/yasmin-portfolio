@@ -115,6 +115,21 @@ export const projects: {
     github: "https://github.com/clambonn/docchat-rag",
     stack: ["FastAPI", "LangChain", "pgvector", "LLaMA 3", "React", "Docker"],
   },
+  {
+  title: "FocusGrid — Offline Productivity App",
+  period: "2026",
+  track: "data",
+  description:
+    "A calm, offline-first Eisenhower Matrix designed to reduce task overwhelm and help users focus on one thing at a time.",
+  bullets: [
+    "Built an installable Progressive Web App with React, TypeScript, and Vite",
+    "Implemented local-only task persistence with localStorage and validation",
+    "Added offline support using a service worker and Workbox precaching",
+    "Designed keyboard-friendly interactions, Focus mode, dark mode, and reduced-motion support",
+  ],
+  github: "https://github.com/clambonn/focusgrid",
+  stack: ["React", "TypeScript", "Vite", "PWA", "LocalStorage"],
+},
   
 ];
 
